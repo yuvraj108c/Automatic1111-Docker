@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  latest:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: python:3.10-slim
+        WEBUI_VERSION: 1.9.4
+        WORKDIR: /workspace
+    image: yuvraj108c/a1111:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+
+    # command: /bin/bash
+    # tty: true
+    # stdin_open: true
+    ports:
+      - 22:22 # ssh
+      - 7860:7860 # a1111
+      - 8888:8888 # jupyter server
