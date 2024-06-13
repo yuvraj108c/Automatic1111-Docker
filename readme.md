@@ -4,8 +4,7 @@
 
 [![python](https://img.shields.io/badge/python-3.10-green)](https://www.python.org/downloads/)
 [![cuda](https://img.shields.io/badge/cuda-12.4-green)](https://developer.nvidia.com/cuda-downloads)
-[![mit](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-
+[![by-nc-sa/4.0](https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 </div>
 
 ## Tags
