@@ -2,11 +2,17 @@
 
 # Docker image for Automatic1111
 
-[![python](https://img.shields.io/badge/python-3.12-green)](https://www.python.org/downloads/)
+[![python](https://img.shields.io/badge/python-3.10-green)](https://www.python.org/downloads/)
 [![cuda](https://img.shields.io/badge/cuda-12.4-green)](https://developer.nvidia.com/cuda-downloads)
 [![mit](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 </div>
+
+## Tags
+| Tag    | Description                      | Size      |
+| ------ | -------------------------------- | --------- |
+| latest | python 3.10, Automatic1111 1.9.4 | ~ 30.5 GB |
+
 
 ## Extensions
 - [sd-webui-deforum](https://github.com/deforum-art/sd-webui-deforum.git)
@@ -34,11 +40,11 @@
 
 ## Ports
 
-| Connect Port | Internal Port | Description |
-| ------------ | ------------- | ----------- |
-| 22           | 22            | SSH Server  |
-| 8188         | 8188          | Automatic1111     |
-| 8888         | 8888          | Jupyter Lab |
+| Connect Port | Internal Port | Description   |
+| ------------ | ------------- | ------------- |
+| 22           | 22            | SSH Server    |
+| 8188         | 8188          | Automatic1111 |
+| 8888         | 8888          | Jupyter Lab   |
 
 ## Environment Variables
 
@@ -69,4 +75,4 @@ docker-compose build latest
 ```
 
 ## License
-MIT
+CC BY-NC-SA 4.0
