@@ -42,7 +42,7 @@
 | Connect Port | Internal Port | Description   |
 | ------------ | ------------- | ------------- |
 | 22           | 22            | SSH Server    |
-| 8188         | 8188          | Automatic1111 |
+| 7860         | 7860          | Automatic1111 |
 | 8888         | 8888          | Jupyter Lab   |
 
 ## Environment Variables
@@ -61,14 +61,14 @@ Each of the following environment variable is optional, set either `SSH_PASSWORD
 docker run -d \
   --gpus all \
   -p 22:22 \
-  -p 8188:8188 \
+  -p 7860:7860 \
   -p 8888:8888 \
   yuvraj108c/a1111:latest
 ```
 
 ## Building the docker image
 ```bash
-git clone git https://github.com/yuvraj108c/Automatic1111-Docker.git
+git clone https://github.com/yuvraj108c/Automatic1111-Docker.git
 cd Automatic1111-Docker
 docker-compose build latest
 ```
